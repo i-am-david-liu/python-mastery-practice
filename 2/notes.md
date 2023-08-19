@@ -52,3 +52,9 @@ print( max(rt22, key=lambda row: int(row['rides'])) )   # create generator for r
     - But, this is best used if we expect all objects of the class to have a specific set of attributes (no dynamic definitions)
     - Also, their effects are best represented when we instantiate a LOT of those objects (memory scaling)
 - `isinstance()` for object type equality
+
+# Exercise 2.6 notes
+
+- `l = [str, int, float]` (list of functions, yeah you can do that!)
+- we can do this too: `record = [func(val) for func, val in zip(l, ['A', '100', '32.30'])`
+- the reason why we can "store" functions as elements is because everything in Python is a "first-class object"
